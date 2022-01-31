@@ -1,11 +1,11 @@
 * {
   text-decoration: none;
-  font-family: Lato, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -14,13 +14,13 @@ a {
 
 h1 {
   font-size: 4rem;
-  font-weight: 900;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 
 h3 {
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 13px 10px;
   margin: 0;
 }
@@ -50,9 +50,9 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 13px 60px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  /*position: sticky;*/
+  /*top: 0;*/
+  /*z-index: 100;*/
 }
 
 .nav_container {
@@ -78,18 +78,10 @@ nav {
 /* HERO SECTION */
 #hero {
   display: grid;
+  grid-column-gap: 250px;
   grid-template-columns: 2fr 1fr;
   background: var(--col-grey);
   padding: 60px 60px 0 60px;
-}
-
-#hero .phone_img {
-  width: 220px;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 50;
 }
 
 #hero p {
@@ -99,18 +91,19 @@ nav {
   line-height: 1.8;
 }
 
-.video {
-  position: absolute;
-  top: 14px;
-  left: 16px;
-  z-index: 5;
-  width: 190px;
-  height: auto;
-}
-
 .app_icon {
   width: 180px;
   height: auto;
+}
+
+/* PHONE IMAGE */
+.phone_img {
+  width: 220px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
 }
 
 .bg_circle {
@@ -142,12 +135,46 @@ nav {
   background: var(--col-blue);
 }
 
-#line1 {
+.line1 {
   top: 403px;
   transform: rotate(-60deg);
 }
 
-#line2 {
+.line2 {
   top: 399px;
   transform: rotate(30deg);
 }
+
+.video {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  z-index: 5;
+  width: 190px;
+  height: auto;
+}
+
+/* TESTIMONIAL */
+#testimonial {
+  padding: 60px 180px;
+  color: #FFFFFF;
+  background: linear-gradient(to right, var(--bg-dk-purple), var(--bg-lt-purple));
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#testimonial p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+#tnw_logo {
+  justify-self: center;
+  width: 140px;
+  height: auto;
+}
+
+/*  */
