@@ -9,6 +9,12 @@
   scroll-behavior: smooth;
 }
 
+@media (max-width: 600px) {
+  * {
+    text-align: center;
+  }
+}
+
 a,
 a:visited {
   text-decoration: none;
@@ -49,6 +55,16 @@ h4 {
   font-weight: 600;
   padding: 13px 10px;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 p {
@@ -96,6 +112,26 @@ p {
   justify-self: end;
 }
 
+@media (max-width: 600px) {
+  .app-icon-cont {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .app-icon-cont a {
+    justify-self: center;
+  }
+
+  .app-icon-cont a:first-child {
+    justify-self: center;
+  }
+
+  .pad_vert_big {
+    padding: 30px 0;
+  }
+}
+
 /* ANIMATIONS */
 @keyframes rotate_cross_down {
   from {
@@ -118,11 +154,15 @@ p {
 /* NAVBAR */
 nav {
   background: var(--col-white);
+  width: 100%;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 13px 60px;
-  position: sticky;
+  /*TODO: Make scrolling scroll to correct position instead of padding fix*/
+  position: fixed;
   top: 0;
+  z-index: 1000;
 }
 
 .nav_container {
@@ -162,11 +202,27 @@ nav {
   grid-column-gap: 250px;
   grid-template-columns: 2fr 1fr;
   background: var(--col-grey);
-  padding: 60px 60px 0 60px;
+  padding: 90px 60px 0 60px;
 }
 
 #hero p {
   margin-bottom: 60px;
+}
+
+@media (max-width: 600px) {
+  #hero {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 30px 30px;
+  }
+
+  #hero .float_child {
+    justify-self: center;
+  }
+
+  #hero p {
+    margin-bottom: 20px;
+  }
 }
 
 /* PHONE IMAGE */
@@ -191,8 +247,9 @@ nav {
 }
 
 .circle {
-  position: relative;
-  left: 300px;
+  position: absolute;
+  top: 30px;
+  left: 250px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -200,7 +257,7 @@ nav {
 }
 
 .cross {
-  position: relative;
+  position: absolute;
   left: -100px;
   height: 4px;
   border-radius: 2px;
@@ -209,13 +266,13 @@ nav {
 }
 
 .line1 {
-  top: 403px;
+  top: 400px;
   transform: rotate(-45deg);
   animation: rotate_cross_down infinite 2s linear;
 }
 
 .line2 {
-  top: 399px;
+  top: 400px;
   transform: rotate(45deg);
   animation: rotate_cross_up infinite 2s linear;
 }
@@ -223,10 +280,20 @@ nav {
 .video {
   position: absolute;
   top: 14px;
-  left: 16px;
+  left: 15px;
   z-index: 5;
   width: 190px;
   height: auto;
+}
+
+@media (max-width: 600px) {
+  .cross, .circle, .bg_circle {
+    display: none;
+  }
+
+  .phone_img, .video {
+    transform: translateX(-110px) scale(0.8);
+  }
 }
 
 /* TESTIMONIAL */
@@ -249,15 +316,27 @@ nav {
 
 #tnw_logo {
   justify-self: center;
+  align-self: center;
   width: 140px;
   height: auto;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  #testimonial {
+    padding: 50px 20px;
+  }
+
+  #testimonial p {
+    font-size: 1.25rem;
+  }
 }
 
 /* FEATURES */
 #features {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 60px 60px 60px 120px;
+  padding: 90px 60px 60px 120px;
 }
 
 #features .float_child {
@@ -291,7 +370,38 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-/* ABOUT APP */
+@media (max-width: 900px) {
+  #features {
+    grid-template-rows: 1fr 0.45fr;
+    grid-template-columns: 1fr;
+    padding: 30px 30px;
+  }
+
+  .feature_list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+
+  .feature {
+    justify-self: center;
+  }
+
+  #features .float_child {
+    transform: scale(0.7);
+    grid-row: 2;
+  }
+
+  #features .phone_img {
+    left: calc((100vw - (220px * 0.7)) / 2 + 40px);
+  }
+
+  #features .video {
+    left: calc((100vw - (220px * 0.7)) / 2 + 55px);
+  }
+}
+
+/* ABOUT APPLICANT */
 #abt {
   background: var(--col-grey);
   display: grid;
@@ -308,6 +418,24 @@ nav {
   width: 400px;
   height: auto;
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  #abt {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.25fr;
+    grid-row-gap: 20px;
+    padding: 30px 30px 130px 30px;
+  }
+
+  #content {
+    padding: 0;
+  }
+
+  #abt img {
+    width: 200px;
+    justify-self: center;
+  }
 }
 
 /* DOWNLOAD */
