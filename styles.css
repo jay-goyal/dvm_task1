@@ -1,0 +1,153 @@
+* {
+  text-decoration: none;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 13px 10px;
+  margin: 0;
+}
+
+/* VARIABLES */
+:root {
+  --col-blue: #2937F0;
+  --col-grey: #F8F9FA;
+  --bg-dk-purple: #4D31EB;
+  --bg-lt-purple: #9F1AE1;
+  --fg-grey: #6D767D;
+}
+
+/* HELPER */
+.pad_vert_big {
+  padding: 90px 0;
+}
+
+.float_child {
+  position: relative;
+  overflow: visible;
+}
+
+/* NAVBAR */
+nav {
+  background: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 13px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 2fr;
+  justify-self: end;
+}
+
+.nav_elem {
+  box-sizing: border-box;
+  padding: 13px 10px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.btn_blu {
+  background: var(--col-blue);
+  color: #FFFFFF;
+  padding: 13px 17px;
+  border-radius: 22px;
+}
+
+/* HERO SECTION */
+#hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: var(--col-grey);
+  padding: 60px 60px 0 60px;
+}
+
+#hero .phone_img {
+  width: 220px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+#hero p {
+  margin-bottom: 60px;
+  font-weight: 400;
+  color: var(--fg-grey);
+  line-height: 1.8;
+}
+
+.video {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  z-index: 5;
+  width: 190px;
+  height: auto;
+}
+
+.app_icon {
+  width: 180px;
+  height: auto;
+}
+
+.bg_circle {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background: linear-gradient(to bottom right, var(--bg-dk-purple), var(--bg-lt-purple) 85%);
+  left: -60px;
+  top: 50px;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.circle {
+  position: relative;
+  left: 300px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--col-blue);
+}
+
+.cross {
+  position: relative;
+  left: -100px;
+  height: 4px;
+  border-radius: 2px;
+  width: 15px;
+  background: var(--col-blue);
+}
+
+#line1 {
+  top: 403px;
+  transform: rotate(-60deg);
+}
+
+#line2 {
+  top: 399px;
+  transform: rotate(30deg);
+}
