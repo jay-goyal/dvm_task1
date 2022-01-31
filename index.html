@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap"
 			rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://kit.fontawesome.com/5397743099.js"
@@ -16,11 +16,11 @@
 	<!-- NAV -->
 	<nav>
 		<div>
-			<h3>Start Bootstrap</h3>
+			<h4>Start Bootstrap</h4>
 		</div>
 		<div class="nav_container">
-			<div class="nav_elem">Features</div>
-			<div class="nav_elem">Download</div>
+			<div class="nav_elem"><a href="#features">Features</a></div>
+			<div class="nav_elem"><a href="#dwnld">Download</a></div>
 			<div class="nav_elem">
 				<a href="#" class="btn_blu">
 					<i class="fa-solid fa-comment-dots"></i> Send Feedback</a>
@@ -33,19 +33,26 @@
 		<div class="pad_vert_big">
 			<h1>Showcase Your App Beautifully</h1>
 			<p>
-				Launch your mobile app landing page faster with this<br>
+				Launch your mobile app landing page faster with this
 				free, open source theme from Start Bootstrap
 			</p>
-			<img src="./img/google-play-badge.svg" alt="Get on Google Play"
-			     class="app_icon">
-			<img src="./img/app-store-badge.svg" alt="Get on App Store"
-			     class="app_icon">
+			<div class="app-icon-cont">
+				<a href="https://play.google.com/store/apps/details?id=org.subitspilani.bits_su_app"
+				   target="_blank">
+					<img src="./img/google-play-badge.svg" alt="Get on Google Play"
+					     class="app-icon"></a>
+				<a href="https://apps.apple.com/in/app/bits-su-app/id1483960095"
+				   target="_blank">
+					<img src="./img/app-store-badge.svg"
+					     alt="Get on App Store"
+					     class="app-icon"></a>
+			</div>
 		</div>
 
 		<div class="float_child">
 			<img class="phone_img" src="./img/portrait_black.png"
 			     alt="App preview">
-			<video class="video" autoplay loop>
+			<video class="video">
 				<source src="./img/demo-screen.mp4" type="video/mp4">
 			</video>
 			<div class="bg_circle"></div>
@@ -55,12 +62,114 @@
 		</div>
 	</div>
 
-	<div id="testimonial">
+	<!-- TNW TESTIMONIAL -->
+	<div id="testimonial" class="bg-grad">
 		<p>
-			"An intuitive solution to a common problem<br>
+			"An intuitive solution to a common problem
 			that we all face, wrapped up in a single app!"
 		</p>
 		<img src="./img/tnw-logo.svg" alt="TNW" id="tnw_logo">
 	</div>
+
+	<!-- FEATURES -->
+	<div id="features">
+		<div class="float_child">
+			<img class="phone_img" src="./img/portrait_black.png"
+			     alt="App preview">
+			<video class="video">
+				<source src="./img/demo-screen.mp4" type="video/mp4">
+			</video>
+			<div class="bg_circle"></div>
+			<div class="circle"></div>
+			<div class="cross line1"></div>
+			<div class="cross line2"></div>
+		</div>
+		<div class="feature_list">
+			<div class="feature">
+				<i class="fa-solid fa-mobile-screen-button header-icon"></i>
+				<h3>Device Mockups</h3>
+				<p>
+					Ready to use HTML/CSS device mockups,
+					no Photoshop required!
+				</p>
+			</div>
+			<div class="feature">
+				<i class="fa-solid fa-camera header-icon"></i>
+				<h3>Flexible Use</h3>
+				<p>
+					Put an image, video, animation, or anything
+					else in the screen!
+				</p>
+			</div>
+			<div class="feature">
+				<i class="fa-solid fa-gift header-icon"></i>
+				<h3>Free to Use</h3>
+				<p>
+					As always, this theme is free to download
+					and use for any purpose
+				</p>
+			</div>
+			<div class="feature">
+				<i class="fa-regular fa-circle-check header-icon"></i>
+				<h3>Open Source</h3>
+				<p>
+					Since this theme is MIT licensed, you can use
+					it commercially
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- ABOUT ME -->
+	<div id="abt">
+		<div id="content">
+			<h2>Enter another web designer</h2>
+			<p>
+				Hi... This is
+				<a href="https://github.com/jay-goyal" target="_blank">Jay Goyal</a>.
+				I am a newbie when it comes to frontend.
+				This is only my second website that I have built on my own.
+				The fields of this vast world of computer science that I have explored
+				include Linux, CLI Games using Rust. I was fascinated by Web3 which was
+				introduced to me in the BUIDL IT Hackathon by Polygon. I didn't have
+				much webdev experience back then. But now, I am prepared to join the DVM
+				and take on the web that is world-wide.
+			</p>
+		</div>
+		<img src="./img/app-img.svg" alt="">
+	</div>
+
+	<!-- DOWNLOAD -->
+	<div id="dwnld">
+		<div id="dwnld-head">
+			<h2>Stop Waiting.<br>
+			    Start Building.</h2>
+			<a href="#" class="btn_white">Download for free</a>
+		</div>
+		<div id="mob-links" class="bg-grad">
+			<p>Get the app now!</p>
+			<div class="app-icon-cont">
+				<a href="https://play.google.com/store/apps/details?id=org.subitspilani.bits_su_app"
+				   target="_blank">
+					<img src="./img/google-play-badge.svg" alt="Get on Google Play"
+					     class="app-icon"></a>
+				<a href="https://apps.apple.com/in/app/bits-su-app/id1483960095"
+				   target="_blank">
+					<img src="./img/app-store-badge.svg"
+					     alt="Get on App Store"
+					     class="app-icon"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer>
+		<p>&copy; Start Bootstrap 2021. All Rights Reserved.</p>
+		<p>
+			<a href="#">Privacy</a> &middot;
+			<a href="#">Terms</a> &middot;
+			<a href="#">FAQ</a>
+		</p>
+	</footer>
 </body>
 </html>
