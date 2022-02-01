@@ -564,6 +564,12 @@ nav {
   margin-bottom: 40px;
 }
 
+@media (max-width: 900px) {
+  #dwnld-head {
+    padding: 150px 60px;
+  }
+}
+
 .btn_white,
 .btn_white:visited {
   color: var(--col-white);
