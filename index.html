@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://kit.fontawesome.com/5397743099.js"
 	        crossorigin="anonymous"></script>
+	<script src="./index.js" defer></script>
 	<title>Start Bootstrap</title>
 </head>
 <body>
@@ -18,19 +19,38 @@
 		<div>
 			<a href="#hero"><h3>Start Bootstrap</h3></a>
 		</div>
-		<div class="nav_container">
-			<div class="nav_elem"><a href="#features">Features</a></div>
-			<div class="nav_elem"><a href="#dwnld">Download</a></div>
-			<div class="nav_elem">
+		<div class="nav-container">
+			<div class="nav-elem"><a href="#features">Features</a></div>
+			<div class="nav-elem"><a href="#dwnld">Download</a></div>
+			<div class="nav-elem">
 				<a href="#" class="btn_blu">
 					<i class="fa-solid fa-comment-dots"></i> Send Feedback</a>
 			</div>
 		</div>
+
+		<div class="hmbgr">
+			Menu
+			<div style="height: 22px">
+				<div class="hmbgr-line"></div>
+				<div class="hmbgr-line"></div>
+				<div class="hmbgr-line"></div>
+			</div>
+		</div>
 	</nav>
+
+	<!-- HAMBURGER OVERLAY -->
+	<div class="overlay">
+		<div class="nav-elem"><a href="#features">Features</a></div>
+		<div class="nav-elem"><a href="#dwnld">Download</a></div>
+		<div class="nav-elem">
+			<a href="#" class="btn_blu">
+				<i class="fa-solid fa-comment-dots"></i> Send Feedback</a>
+		</div>
+	</div>
 
 	<!-- HERO -->
 	<div id="hero">
-		<div class="pad_vert_big">
+		<div class="pad-vert-big">
 			<h1>Showcase Your App Beautifully</h1>
 			<p>
 				Launch your mobile app landing page faster with this
@@ -49,13 +69,13 @@
 			</div>
 		</div>
 
-		<div class="float_child">
-			<img class="phone_img" src="./img/portrait_black.png"
+		<div class="float-child">
+			<img class="phone-img" src="./img/portrait_black.png"
 			     alt="App preview">
 			<video class="video">
 				<source src="./img/demo-screen.mp4" type="video/mp4">
 			</video>
-			<div class="bg_circle"></div>
+			<div class="bg-circle"></div>
 			<div class="circle"></div>
 			<div class="cross line1"></div>
 			<div class="cross line2"></div>
@@ -73,18 +93,18 @@
 
 	<!-- FEATURES -->
 	<div id="features">
-		<div class="float_child">
-			<img class="phone_img" src="./img/portrait_black.png"
+		<div class="float-child">
+			<img class="phone-img" src="./img/portrait_black.png"
 			     alt="App preview">
 			<video class="video">
 				<source src="./img/demo-screen.mp4" type="video/mp4">
 			</video>
-			<div class="bg_circle"></div>
+			<div class="bg-circle"></div>
 			<div class="circle"></div>
 			<div class="cross line1"></div>
 			<div class="cross line2"></div>
 		</div>
-		<div class="feature_list">
+		<div class="feature-list">
 			<div class="feature">
 				<i class="fa-solid fa-mobile-screen-button header-icon"></i>
 				<h3>Device Mockups</h3>
@@ -163,12 +183,12 @@
 	</div>
 
 	<!-- FOOTER -->
-	<footer>
+	<footer id="footer">
 		<p>&copy; Start Bootstrap 2021. All Rights Reserved.</p>
 		<p>
-			<a href="#">Privacy</a> &middot;
-			<a href="#">Terms</a> &middot;
-			<a href="#">FAQ</a>
+			<a href="#footer">Privacy</a> &middot;
+			<a href="#footer">Terms</a> &middot;
+			<a href="#footer">FAQ</a>
 		</p>
 	</footer>
 </body>
