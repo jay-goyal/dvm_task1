@@ -173,7 +173,6 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 13px 60px;
-  /*TODO: Make scrolling scroll to correct position instead of padding fix*/
   position: fixed;
   top: 0;
   z-index: 1000;
