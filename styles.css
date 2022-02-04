@@ -23,11 +23,6 @@ a:visited {
   transition: 200ms ease-in-out;
 }
 
-a:hover,
-a:active {
-  font-weight: 400;
-}
-
 h1 {
   font-size: 4rem;
   font-weight: 800;
@@ -55,6 +50,11 @@ h4 {
   font-weight: 600;
   padding: 13px 10px;
   margin: 0;
+}
+
+span {
+  font: inherit;
+  transition: 200ms ease-in-out;
 }
 
 @media (max-width: 900px) {
@@ -165,6 +165,53 @@ p {
   }
 }
 
+@keyframes circle_glob {
+  0% {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 30px;
+    left: 250px;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    height: 17px;
+    width: 13px;
+    border-radius: 7px;
+    top: 29px;
+    left: 251px;
+    transform: rotate(90deg);
+  }
+
+  50% {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 30px;
+    left: 250px;
+    transform: rotate(180deg);
+  }
+
+  75% {
+    height: 13px;
+    width: 17px;
+    border-radius: 7px;
+    top: 31px;
+    left: 249px;
+    transform: rotate(270deg);
+  }
+
+  100% {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 30px;
+    left: 250px;
+    transform: rotate(360deg);
+  }
+}
+
 /* NAVBAR */
 nav {
   background: var(--col-white);
@@ -190,6 +237,7 @@ nav {
   padding: 13px 10px;
   display: inline-block;
   white-space: nowrap;
+  transition: 200ms ease-in-out;
 }
 
 .btn_blu,
@@ -201,7 +249,6 @@ nav {
   border-style: solid;
   border-color: var(--col-blue);
   border-radius: 20px;
-  transition: 200ms ease-in-out;
 }
 
 .hmbgr {
@@ -224,7 +271,7 @@ nav {
 
   .overlay {
     position: fixed;
-    top: 56px;
+    top: 55px;
     visibility: hidden;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -236,7 +283,7 @@ nav {
     background: var(--col-white);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: 200ms linear;
+    transition: 200ms ease-in-out;
     animation: dropdown 200ms ease-in-out;
   }
 
@@ -275,8 +322,8 @@ nav {
     width: 15px;
     background: var(--fg-grey);
     margin-bottom: 2px;
-    transition: 200ms ease-in-out;
     transform-origin: 3px 1px;
+    transition: 200ms ease-in-out;
   }
 
   .hmbgr-line:first-child {
@@ -294,7 +341,11 @@ nav {
 }
 
 #hero p {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+#hero .app-icon-cont {
+  width: 366px;
 }
 
 @media (max-width: 900px) {
@@ -310,6 +361,10 @@ nav {
 
   #hero p {
     margin-bottom: 20px;
+  }
+
+  #hero .app-icon-cont {
+    width: 100%;
   }
 }
 
@@ -348,6 +403,8 @@ nav {
   height: 15px;
   border-radius: 50%;
   background: var(--col-blue);
+  transform-origin: center;
+  animation: circle_glob infinite 4s linear;
 }
 
 .cross {
@@ -521,7 +578,7 @@ nav {
 }
 
 #abt img {
-  width: 400px;
+  width: 350px;
   height: auto;
   border-radius: 50%;
 }
@@ -579,8 +636,8 @@ nav {
   }
 }
 
-.btn_white,
-.btn_white:visited {
+.btn-white,
+.btn-white:visited {
   color: var(--col-white);
   border-width: 2px;
   border-style: solid;
@@ -590,8 +647,8 @@ nav {
   transition: 200ms ease-in-out;
 }
 
-.btn_white:hover,
-.btn_white:active {
+.btn-white:hover,
+.btn-white:active {
   background: var(--col-white);
   color: rgba(0, 0, 0, 0.3);
 }
