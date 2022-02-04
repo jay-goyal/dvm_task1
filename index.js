@@ -23,6 +23,18 @@ nav_elems.forEach(item => {
 	});
 });
 
+const close_nav_click_out = event => {
+	if ((!nav_cont.contains(event.target)) && (!hamburger.contains(event.target))) {
+		if (hamburger.classList.contains("hmbgr-open")) {
+			hamburger.classList.remove("hmbgr-open");
+			nav_cont.classList.remove("overlay-open");
+		}
+	}
+};
+
+document.addEventListener("click", close_nav_click_out);
+document.addEventListener("scroll", close_nav_click_out);
+
 dwnld_btn.addEventListener("click", () => {
 	dwnld_head.id = "dwnld-head-heading";
 	setTimeout(() => {
