@@ -226,6 +226,10 @@ nav {
   white-space: nowrap;
 }
 
+nav h3 {
+  text-align: left;
+}
+
 .nav-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr) 2fr;
@@ -633,6 +637,10 @@ nav {
 @media (max-width: 900px) {
   #dwnld-head {
     padding: 150px 60px;
+  }
+
+  #dwnld-head-heading {
+    font-size: 3.8rem;
   }
 }
 
