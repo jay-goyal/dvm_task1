@@ -553,7 +553,7 @@ nav {
 /* DOWNLOAD */
 #dwnld-head {
   padding: 215px 60px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/build.jpg") no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/build.png") no-repeat fixed;
   background-size: cover;
   color: var(--col-white);
   line-height: 1.3;
@@ -561,6 +561,16 @@ nav {
 
 #dwnld-head h2 {
   margin-bottom: 40px;
+  transition: 200ms ease-in-out;
+}
+
+#dwnld-head-heading {
+  font-size: 6rem;
+}
+
+#dwnld-head-heading span {
+  visibility: hidden;
+  font-size: 0;
 }
 
 @media (max-width: 900px) {
