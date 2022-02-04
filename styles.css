@@ -20,7 +20,7 @@ a:visited {
   text-decoration: none;
   font-weight: 500;
   color: #000000;
-  transition: 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 h1 {
@@ -54,7 +54,7 @@ h4 {
 
 span {
   font: inherit;
-  transition: 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 @media (max-width: 900px) {
@@ -241,7 +241,7 @@ nav h3 {
   padding: 13px 10px;
   display: inline-block;
   white-space: nowrap;
-  transition: 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .btn_blu,
@@ -287,7 +287,7 @@ nav h3 {
     background: var(--col-white);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
     animation: dropdown 200ms ease-in-out;
   }
 
@@ -300,11 +300,22 @@ nav h3 {
   .hmbgr {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-column-gap: 3px;
     justify-self: end;
     align-self: center;
     overflow: visible;
-    transition: 200ms ease-in-out;
+    padding: 8px 12px;
+    border: 1px solid #F0F0F0;
+    border-radius: 2px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .hmbgr div {
+    justify-self: end;
+  }
+
+  .hmbgr-open {
+    box-shadow: 1px 1px #F0F0F0, -1px -1px #F0F0F0, inset 1px 1px #F0F0F0, inset -1px -1px #F0F0F0;
+    border: 2px solid #212529;
   }
 
   .hmbgr-open .hmbgr-line:first-child {
@@ -318,7 +329,7 @@ nav h3 {
   .hmbgr-open .hmbgr-line:nth-child(2) {
     width: 0;
     height: 0;
-    transform: translateX(7px);
+    transform: translateX(7px) translateY(1px);
   }
 
   .hmbgr-line {
@@ -327,7 +338,7 @@ nav h3 {
     background: var(--fg-grey);
     margin-bottom: 2px;
     transform-origin: 3px 1px;
-    transition: 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
   }
 
   .hmbgr-line:first-child {
@@ -622,7 +633,7 @@ nav h3 {
 
 #dwnld-head h2 {
   margin-bottom: 40px;
-  transition: 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 #dwnld-head-heading {
@@ -652,7 +663,7 @@ nav h3 {
   border-color: var(--col-white);
   padding: 11px 17px;
   border-radius: 20px;
-  transition: 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .btn-white:hover,
